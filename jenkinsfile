@@ -1,0 +1,9 @@
+node( )
+
+ {
+     def MavenHome = tool name:'maven', type:'maven'
+    stage('checkout'){
+        git branch: 'master', credentialsId: '115932d3-6255-4d0f-a0c8-fa6b6372c70c', url: 'https://github.com/Kvardhika/jenkinsrun'
+
+    }  
+  }
